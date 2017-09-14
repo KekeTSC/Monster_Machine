@@ -2,287 +2,346 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<LinearLayout
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:orientation="vertical">
-
-<LinearLayout
-    android:id="@+id/Ligne1"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="horizontal"
-    android:weightSum="1"
-    android:paddingTop="10dp">
-
-    <ImageButton
-        android:id="@+id/imageSealion"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:background="@null"
-        android:contentDescription="@string/sealion"
-        android:cropToPadding="false"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/sealion_liste" />
-
-    <ImageButton
-        android:id="@+id/imageChocoBunny"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:background="@null"
-        android:contentDescription="@string/choco_bunny"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/chocobunny_liste" />
-
-    <ImageButton
-        android:id="@+id/imagePandaClaus"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:background="@null"
-        android:contentDescription="@string/panda_claus"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/panda_claus_liste" />
-
-</LinearLayout>
+    android:layout_height="wrap_content">
 
     <LinearLayout
-        android:id="@+id/TextLigne1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingBottom="16dp">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
 
-
-        <TextView
-            android:id="@+id/Sealion"
-            android:layout_width="100dp"
+        <LinearLayout
+            android:id="@+id/Ligne1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/sealion" />
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
 
-        <TextView
-            android:id="@+id/ChocoBunny"
-            android:layout_width="100dp"
+            <ImageButton
+                android:id="@+id/imageSealion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/sealion"
+                android:cropToPadding="false"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/sealion_liste" />
+
+            <ImageButton
+                android:id="@+id/imageChocoBunny"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.34"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/choco_bunny"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/chocobunny_liste" />
+
+            <ImageButton
+                android:id="@+id/imagePandaClaus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/panda_claus"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/panda_claus_liste" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/TextLigne1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/choco_bunny" />
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
 
-        <TextView
-            android:id="@+id/PandaClaus"
-            android:layout_width="100dp"
+
+            <TextView
+                android:id="@+id/Sealion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="@string/sealion"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/ChocoBunny"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.34"
+                android:gravity="center"
+                android:text="@string/choco_bunny"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/PandaClaus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="@string/panda_claus"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Ligne2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/panda_claus" />
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageMetaselash"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/metaselash"
+                android:cropToPadding="false"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/metaselash_liste" />
+
+            <ImageButton
+                android:id="@+id/imageMechamancer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.34"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/mechamancer"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/mechamancer_liste" />
+
+            <ImageButton
+                android:id="@+id/imageKomocat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/komocat"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/komocat_liste" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/TextLigne2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/Metaselash"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="@string/metaselash"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Mechamancer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.34"
+                android:gravity="center"
+                android:text="@string/mechamancer"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Komocat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="@string/komocat"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Ligne3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageFenix"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/fenix"
+                android:cropToPadding="false"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/fenix_liste" />
+
+            <ImageButton
+                android:id="@+id/imageThunderEagle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.34"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/thunder_eagle"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/thunder_eagle_liste" />
+
+            <ImageButton
+                android:id="@+id/imagePegasus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/pegasus"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/pegasus_liste" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/TextLigne3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/Fenix"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="@string/fenix"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/ThunderEagle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.34"
+                android:gravity="center"
+                android:text="@string/thunder_eagle"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Pegasus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:text="@string/pegasus"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Ligne4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" />
+
+            <ImageButton
+                android:id="@+id/imageObsidia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.34"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/obsidia"
+                android:cropToPadding="false"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/obsidia_liste" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/TextLigne4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" />
+
+            <TextView
+                android:id="@+id/Obsidia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.34"
+                android:gravity="center"
+                android:text="@string/obsidia"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" />
+
+        </LinearLayout>
+
     </LinearLayout>
-
-<LinearLayout
-    android:id="@+id/Ligne2"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="horizontal"
-    android:weightSum="1">
-
-    <ImageButton
-        android:id="@+id/imageMetaselash"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:background="@null"
-        android:contentDescription="@string/metaselash"
-        android:cropToPadding="false"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/metaselash_liste" />
-
-    <ImageButton
-        android:id="@+id/imageMechamancer"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:background="@null"
-        android:contentDescription="@string/mechamancer"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/mechamancer_liste" />
-
-    <ImageButton
-        android:id="@+id/imageKomocat"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:background="@null"
-        android:contentDescription="@string/komocat"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/komocat_liste" />
-
-</LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/TextLigne2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingBottom="16dp">
-
-
-        <TextView
-            android:id="@+id/Metaselash"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/metaselash" />
-
-        <TextView
-            android:id="@+id/Mechamancer"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/mechamancer" />
-
-        <TextView
-            android:id="@+id/Komocat"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/komocat" />
-    </LinearLayout>
-
-<LinearLayout
-    android:id="@+id/Ligne3"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="horizontal"
-    android:weightSum="1">
-
-    <ImageButton
-        android:id="@+id/imageFenix"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:background="@null"
-        android:contentDescription="@string/fenix"
-        android:cropToPadding="false"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/fenix_liste" />
-
-    <ImageButton
-        android:id="@+id/imageThunderEagle"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:background="@null"
-        android:contentDescription="@string/thunder_eagle"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/thunder_eagle_liste" />
-
-    <ImageButton
-        android:id="@+id/imagePegasus"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:background="@null"
-        android:contentDescription="@string/pegasus"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/pegasus_liste" />
-
-</LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/TextLigne3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingBottom="16dp">
-
-
-        <TextView
-            android:id="@+id/Fenix"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/fenix" />
-
-        <TextView
-            android:id="@+id/ThunderEagle"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/thunder_eagle" />
-
-        <TextView
-            android:id="@+id/Pegasus"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/pegasus" />
-    </LinearLayout>
-
-<LinearLayout
-    android:id="@+id/Ligne4"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center"
-    android:orientation="horizontal"
-    android:weightSum="1">
-
-    <ImageButton
-        android:id="@+id/imageObsidia"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:background="@null"
-        android:contentDescription="@string/obsidia"
-        android:cropToPadding="false"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/obsidia_liste" />
-
-</LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/TextLigne4"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingBottom="16dp">
-
-
-        <TextView
-            android:id="@+id/Obsidia"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/obsidia" />
-
-    </LinearLayout>
-
-</LinearLayout>
 </ScrollView>

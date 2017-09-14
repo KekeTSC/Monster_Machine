@@ -64,11 +64,19 @@ public class DetailActivity extends AppCompatActivity {
         Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/UnZialish.ttf");
         nomMonstre.setTypeface(tf);
 
+
+
         // Set values
+        TextView power = (TextView) findViewById(R.id.value_force);
         TextView health = (TextView) findViewById(R.id.value_health);
-        TextView force = (TextView) findViewById(R.id.value_force);
         TextView stamina = (TextView) findViewById(R.id.value_sta);
         TextView speed = (TextView) findViewById(R.id.value_speed);
+
+        Typeface tf2 = Typeface.createFromAsset(getAssets(), "fonts/Curse Casual.ttf");
+        power.setTypeface(tf2);
+        health.setTypeface(tf2);
+        speed.setTypeface(tf2);
+        stamina.setTypeface(tf2);
 
         /* Assign values to each case **************************************/
         if(monsterId==0){
@@ -80,8 +88,8 @@ public class DetailActivity extends AppCompatActivity {
             elmt2.setImageResource(R.drawable.bte_water);
             skill.setImageResource(R.drawable.skill_sealion);
             nomMonstre.setText("Sealion");
-            health.setText("225 - 1736");
-            force.setText("50 - 6028");
+            power.setText("225 - 1736");
+            health.setText("50 - 6028");
             stamina.setText("200 - 1540");
             speed.setText("110");
 
@@ -94,8 +102,8 @@ public class DetailActivity extends AppCompatActivity {
             elmt2.setImageResource(R.drawable.bte_magic);
             skill.setImageResource(R.drawable.skill_chocobunny);
             nomMonstre.setText("ChocoBunny");
-            health.setText("204 - 2650");
-            force.setText("54 - 17122");
+            power.setText("204 - 2650");
+            health.setText("54 - 17122");
             stamina.setText("225 - 2930");
             speed.setText("130");
 
@@ -108,8 +116,8 @@ public class DetailActivity extends AppCompatActivity {
             elmt2.setImageResource(R.drawable.bte_legend);
             skill.setImageResource(R.drawable.skill_panda_claus);
             nomMonstre.setText("Panda Claus");
-            health.setText("160 - 2464");
-            force.setText("75 - 31667");
+            power.setText("160 - 2464");
+            health.setText("75 - 31667");
             stamina.setText("230 - 3542");
             speed.setText("140");
 
@@ -122,8 +130,8 @@ public class DetailActivity extends AppCompatActivity {
             elmt2.setImageResource(R.drawable.bte_water);
             skill.setImageResource(R.drawable.skill_metaselash);
             nomMonstre.setText("Metaselash");
-            health.setText("226 - 2303");
-            force.setText("51 - 10391");
+            power.setText("226 - 2303");
+            health.setText("51 - 10391");
             stamina.setText("223 - 2278");
             speed.setText("120");
 
@@ -136,8 +144,8 @@ public class DetailActivity extends AppCompatActivity {
             elmt2.setImageResource(R.drawable.bte_water);
             skill.setImageResource(R.drawable.skill_mechamancer);
             nomMonstre.setText("Mechamancer");
-            health.setText("216 - 3322");
-            force.setText("55 - 23223");
+            power.setText("216 - 3322");
+            health.setText("55 - 23223");
             stamina.setText("224 - 3454");
             speed.setText("140");
 
@@ -150,8 +158,8 @@ public class DetailActivity extends AppCompatActivity {
             elmt2.setImageResource(R.drawable.bte_nature);
             skill.setImageResource(R.drawable.skill_komocat);
             nomMonstre.setText("Komocat");
-            health.setText("190 - 1938");
-            force.setText("56 - 11413");
+            power.setText("190 - 1938");
+            health.setText("56 - 11413");
             stamina.setText("210 - 2142");
             speed.setText("120");
 
@@ -164,8 +172,8 @@ public class DetailActivity extends AppCompatActivity {
             elmt2.setImageResource(R.drawable.bte_water);
             skill.setImageResource(R.drawable.skill_fenix);
             nomMonstre.setText("Fenix");
-            health.setText("190 - 2470");
-            force.setText("55 - 17611");
+            power.setText("190 - 2470");
+            health.setText("55 - 17611");
             stamina.setText("200 - 2600");
             speed.setText("130");
 
@@ -174,12 +182,11 @@ public class DetailActivity extends AppCompatActivity {
             evol1.setImageResource(R.drawable.thunder_eagle_1);
             evol2.setImageResource(R.drawable.thunder_eagle_2);
             evol3.setImageResource(R.drawable.thunder_eagle_3);
-            elmt1.setImageResource(R.drawable.bte_fire);
-            elmt2.setImageResource(R.drawable.bte_magic);
+            elmt1.setImageResource(R.drawable.bte_thunder);
             skill.setImageResource(R.drawable.skill_thunder_eagle);
             nomMonstre.setText("Thunder Eagle");
-            health.setText("175 - 875");
-            force.setText("50 - 2480");
+            power.setText("175 - 875");
+            health.setText("50 - 2480");
             stamina.setText("250 - 1250");
             speed.setText("100");
 
@@ -192,8 +199,8 @@ public class DetailActivity extends AppCompatActivity {
             elmt2.setImageResource(R.drawable.bte_light);
             skill.setImageResource(R.drawable.skill_pegasus);
             nomMonstre.setText("Pegasus");
-            health.setText("200 - 2600");
-            force.setText("56 - 17855");
+            power.setText("200 - 2600");
+            health.setText("56 - 17855");
             stamina.setText("200 - 2600");
             speed.setText("130");
 
@@ -206,8 +213,8 @@ public class DetailActivity extends AppCompatActivity {
             elmt2.setImageResource(R.drawable.bte_dark);
             skill.setImageResource(R.drawable.skill_obsidia);
             nomMonstre.setText("Obsidia");
-            health.setText("200 - 1540");
-            force.setText("56 - 6795");
+            power.setText("200 - 1540");
+            health.setText("56 - 6795");
             stamina.setText("200 - 1540");
             speed.setText("110");
 
@@ -264,7 +271,7 @@ public class DetailActivity extends AppCompatActivity {
         viewFlipper.setInAnimation(fade_in);
         viewFlipper.setOutAnimation(fade_out);
         viewFlipper.setAutoStart(true);
-        viewFlipper.setFlipInterval(2000);
+        viewFlipper.setFlipInterval(1500);
         viewFlipper.startFlipping();
     }
 }

@@ -1,11 +1,13 @@
 package com.example.wilder.monstermachine;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity  {
@@ -19,6 +21,28 @@ public class MainActivity extends AppCompatActivity  {
         ActionBar actionBar=getSupportActionBar();
         actionBar.hide();
 
+        Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/Curse Casual.ttf");
+
+        TextView sealion = (TextView) findViewById(R.id.Sealion);
+            sealion.setTypeface(tf);
+        TextView chocobunny = (TextView) findViewById(R.id.ChocoBunny);
+            chocobunny.setTypeface(tf);
+        TextView pandaclaus = (TextView) findViewById(R.id.PandaClaus);
+            pandaclaus.setTypeface(tf);
+        TextView metaselash = (TextView) findViewById(R.id.Metaselash);
+            metaselash.setTypeface(tf);
+        TextView mechamancer = (TextView) findViewById(R.id.Mechamancer);
+            mechamancer.setTypeface(tf);
+        TextView komocat = (TextView) findViewById(R.id.Komocat);
+            komocat.setTypeface(tf);
+        TextView fenix = (TextView) findViewById(R.id.Fenix);
+            fenix.setTypeface(tf);
+        TextView thundereagle = (TextView) findViewById(R.id.ThunderEagle);
+            thundereagle.setTypeface(tf);
+        TextView pegasus = (TextView) findViewById(R.id.Pegasus);
+            pegasus.setTypeface(tf);
+        TextView obsidia = (TextView) findViewById(R.id.Obsidia);
+            obsidia.setTypeface(tf);
         //
         ImageButton btn0 = (ImageButton) findViewById(R.id.imageSealion);
         ImageButton btn1 = (ImageButton) findViewById(R.id.imageChocoBunny);

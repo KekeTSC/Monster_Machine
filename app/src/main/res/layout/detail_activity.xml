@@ -1,307 +1,281 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/navy_blue_felt"
+    android:weightSum="1"
     tools:context="com.app.toyo.slideshowwallpaper.MainActivity"
-    android:background="#FFFFFF">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="1">
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/menu_icon" />
 
-            <ImageButton
-                android:id="@+id/btnHome"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:background="@null"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/menu_icon" />
+        <TextView
+            android:id="@+id/Nom_monstre"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="@string/sealion"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
 
-            <TextView
-                android:id="@+id/Nom_monstre"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginRight="48dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/sealion"
-                android:textColor="@android:color/black"
-                android:textSize="30sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:orientation="horizontal">
-
-            <ViewFlipper
-                android:id="@+id/bckgrndViewFlipper1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp">
-
-                <ImageView
-                    android:id="@+id/evolution_0"
-                    android:layout_width="163dp"
-                    android:layout_height="match_parent"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/sealion_0" />
-
-                <ImageView
-                    android:id="@+id/evolution_1"
-                    android:layout_width="132dp"
-                    android:layout_height="156dp"
-                    android:layout_weight="1"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/sealion_1" />
-
-                <ImageView
-                    android:id="@+id/evolution_2"
-                    android:layout_width="132dp"
-                    android:layout_height="156dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/sealion_2" />
-
-                <ImageView
-                    android:id="@+id/evolution_3"
-                    android:layout_width="132dp"
-                    android:layout_height="156dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/sealion_3" />
-
-            </ViewFlipper>
-
-            <ImageView
-                android:id="@+id/element_1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="5dp"
-                android:layout_weight="0.15"
-                app:srcCompat="@drawable/bte_fire" />
-
-            <ImageView
-                android:id="@+id/element_2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="70dp"
-                android:layout_marginStart="5dp"
-                android:layout_weight="0.15"
-                app:srcCompat="@drawable/bte_water" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textstat"
-                android:layout_width="wrap_content"
-                android:layout_height="37dp"
-                android:layout_marginStart="10dp"
-                android:text="@string/textstat"
-                android:textColor="@android:color/black"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="37dp"
-                android:layout_marginStart="10dp"
-                android:text="@string/lvl"
-                android:textColor="@android:color/black"
-                android:textSize="10sp" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="right"
-                android:text="@string/skil"
-                android:textColor="@android:color/black" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.10"
-                android:orientation="vertical"
-                android:weightSum="1">
-
-                <ImageView
-                    android:id="@+id/stat_power"
-                    android:layout_width="39dp"
-                    android:layout_height="40dp"
-                    app:srcCompat="@drawable/stat_power"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="22dp" />
-
-                <ImageView
-                    android:id="@+id/stat_life"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="8dp"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/stat_power"
-                    app:srcCompat="@drawable/stat_life" />
-
-                <ImageView
-                    android:id="@+id/stat_speed"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginTop="8dp"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/stat_life"
-                    app:srcCompat="@drawable/stat_speed" />
-
-                <ImageView
-                    android:id="@+id/stat_stamina"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="8dp"
-                    app:layout_constraintTop_toBottomOf="@+id/stat_speed"
-                    app:srcCompat="@drawable/stat_stamina"
-                    tools:layout_editor_absoluteX="0dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="174dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.80"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/value_health"
-                    android:layout_width="match_parent"
-                    android:layout_height="22dp"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center"
-                    android:text="@string/value_zero"
-                    android:textColor="@android:color/black"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/value_force" />
-
-                <TextView
-                    android:id="@+id/value_force"
-                    android:layout_width="match_parent"
-                    android:layout_height="22dp"
-                    android:layout_marginTop="28dp"
-                    android:gravity="center"
-                    android:text="@string/value_zero"
-                    android:textColor="@android:color/black"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/value_sta"
-                    android:layout_width="match_parent"
-                    android:layout_height="22dp"
-                    android:layout_marginTop="24dp"
-                    android:gravity="center"
-                    android:text="@string/value_zero"
-                    android:textColor="@android:color/black"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/value_speed" />
-
-                <TextView
-                    android:id="@+id/value_speed"
-                    android:layout_width="match_parent"
-                    android:layout_height="22dp"
-                    android:layout_marginTop="28dp"
-                    android:gravity="center"
-                    android:text="@string/value_zero"
-                    android:textColor="@android:color/black"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/value_health" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.10"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/skill"
-                    android:layout_width="match_parent"
-                    android:layout_height="102dp"
-                    app:srcCompat="@drawable/skill_sealion"
-                    tools:layout_editor_absoluteX="-3dp"
-                    tools:layout_editor_absoluteY="216dp" />
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:gravity="center"
-                    android:text="@string/more_details"
-                    android:textColor="@android:color/black"
-                    android:textSize="10sp" />
-
-                <ImageButton
-                    android:id="@+id/btnWiki"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:background="@null"
-                    android:contentDescription="@string/sealion"
-                    android:cropToPadding="false"
-                    android:paddingLeft="8dp"
-                    android:paddingRight="8dp"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/logo_monster_legend_wiki" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_weight="0.10"
-            android:gravity="center_horizontal|center"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btnPrevious"
-                android:layout_width="wrap_content"
-                android:layout_height="37dp"
-                android:layout_marginRight="8dp"
-                android:background="@drawable/colorbutton"
-                android:text="@string/previous" />
-
-            <Button
-                android:id="@+id/btnNext"
-                android:layout_width="wrap_content"
-                android:layout_height="37dp"
-                android:layout_marginLeft="8dp"
-                android:background="@drawable/colorbutton"
-                android:text="@string/next" />
-        </LinearLayout>
-
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15" />
 
     </LinearLayout>
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <ViewFlipper
+            android:id="@+id/bckgrndViewFlipper1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:background="@drawable/testfond">
+
+            <ImageView
+                android:id="@+id/evolution_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sealion_0" />
+
+            <ImageView
+                android:id="@+id/evolution_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sealion_1" />
+
+            <ImageView
+                android:id="@+id/evolution_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sealion_2" />
+
+            <ImageView
+                android:id="@+id/evolution_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sealion_3" />
+
+        </ViewFlipper>
+
+        <ImageView
+            android:id="@+id/element_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:paddingLeft="50dp"
+            android:paddingRight="4dp"
+            app:srcCompat="@drawable/bte_fire" />
+
+        <ImageView
+            android:id="@+id/element_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:paddingLeft="4dp"
+            android:paddingRight="50dp"
+            android:color="#00FFFFFF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingRight="8dp">
+
+            <ImageView
+                android:id="@+id/stat_power"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/stat_power"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="22dp" />
+
+            <ImageView
+                android:id="@+id/stat_life"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/stat_life" />
+
+            <ImageView
+                android:id="@+id/stat_speed"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/stat_speed" />
+
+            <ImageView
+                android:id="@+id/stat_stamina"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/stat_stamina"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:background="@drawable/testfond"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/value_force"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="@string/value_zero"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/value_health"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="@string/value_zero"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/value_force" />
+
+            <TextView
+                android:id="@+id/value_sta"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="@string/value_zero"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/value_speed" />
+
+            <TextView
+                android:id="@+id/value_speed"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="@string/value_zero"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/value_health" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+            <ImageView
+                android:id="@+id/skill"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                app:srcCompat="@drawable/skill_sealion" />
+
+            <ImageButton
+                android:id="@+id/btnWiki"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/sealion"
+                android:paddingTop="8dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/logo_monster_legend_wiki" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/colorbutton"
+            android:text="@string/previous"
+            android:layout_weight="0.1" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/colorbutton"
+            android:text="@string/next"
+            android:layout_weight="0.1" />
+    </LinearLayout>
+</LinearLayout>
