@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity  {
                 Intent intent = new Intent(MainActivity.this,   DetailActivity.class);
                 intent.putExtra("monsterId", 0);
                 startActivity(intent);
+                overridePendingTransition(R.anim.top_in, R.anim.bottom_out);
             }
         });
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +70,7 @@ public class MainActivity extends AppCompatActivity  {
                 Intent intent = new Intent(MainActivity.this,   DetailActivity.class);
                 intent.putExtra("monsterId", 1);
                 startActivity(intent);
+                overridePendingTransition(R.anim.top_in, R.anim.bottom_out);
             }
         });
         btn2.setOnClickListener(new View.OnClickListener() {
@@ -77,6 +79,7 @@ public class MainActivity extends AppCompatActivity  {
                 Intent intent = new Intent(MainActivity.this,   DetailActivity.class);
                 intent.putExtra("monsterId", 2);
                 startActivity(intent);
+                overridePendingTransition(R.anim.top_in, R.anim.bottom_out);
             }
         });
         btn3.setOnClickListener(new View.OnClickListener() {
@@ -85,6 +88,7 @@ public class MainActivity extends AppCompatActivity  {
                 Intent intent = new Intent(MainActivity.this,   DetailActivity.class);
                 intent.putExtra("monsterId", 3);
                 startActivity(intent);
+                overridePendingTransition(R.anim.top_in, R.anim.bottom_out);
             }
         });
         btn4.setOnClickListener(new View.OnClickListener() {
@@ -93,6 +97,7 @@ public class MainActivity extends AppCompatActivity  {
                 Intent intent = new Intent(MainActivity.this,   DetailActivity.class);
                 intent.putExtra("monsterId", 4);
                 startActivity(intent);
+                overridePendingTransition(R.anim.top_in, R.anim.bottom_out);
             }
         });
         btn5.setOnClickListener(new View.OnClickListener() {
@@ -101,6 +106,7 @@ public class MainActivity extends AppCompatActivity  {
                 Intent intent = new Intent(MainActivity.this,   DetailActivity.class);
                 intent.putExtra("monsterId", 5);
                 startActivity(intent);
+                overridePendingTransition(R.anim.top_in, R.anim.bottom_out);
             }
         });
         btn6.setOnClickListener(new View.OnClickListener() {
@@ -109,6 +115,7 @@ public class MainActivity extends AppCompatActivity  {
                 Intent intent = new Intent(MainActivity.this,   DetailActivity.class);
                 intent.putExtra("monsterId", 6);
                 startActivity(intent);
+                overridePendingTransition(R.anim.top_in, R.anim.bottom_out);
             }
         });
         btn7.setOnClickListener(new View.OnClickListener() {
@@ -117,6 +124,7 @@ public class MainActivity extends AppCompatActivity  {
                 Intent intent = new Intent(MainActivity.this,   DetailActivity.class);
                 intent.putExtra("monsterId", 7);
                 startActivity(intent);
+                overridePendingTransition(R.anim.top_in, R.anim.bottom_out);
             }
         });
         btn8.setOnClickListener(new View.OnClickListener() {
@@ -125,6 +133,7 @@ public class MainActivity extends AppCompatActivity  {
                 Intent intent = new Intent(MainActivity.this,   DetailActivity.class);
                 intent.putExtra("monsterId", 8);
                 startActivity(intent);
+                overridePendingTransition(R.anim.top_in, R.anim.bottom_out);
             }
         });
         btn9.setOnClickListener(new View.OnClickListener() {
@@ -133,6 +142,7 @@ public class MainActivity extends AppCompatActivity  {
                 Intent intent = new Intent(MainActivity.this,   DetailActivity.class);
                 intent.putExtra("monsterId", 9);
                 startActivity(intent);
+                overridePendingTransition(R.anim.top_in, R.anim.bottom_out);
             }
         });
 

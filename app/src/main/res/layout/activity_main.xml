@@ -6,16 +6,16 @@
     android:layout_height="match_parent"
     android:clickable="true"
     android:orientation="vertical"
+    android:background="@drawable/navy_blue_felt"
     tools:context="com.example.wilder.monstermachine.MainActivity">
 
     <ImageView
         android:id="@+id/imageMonsterMachine"
         android:layout_width="match_parent"
         android:layout_height="129dp"
-        android:layout_marginTop="8dp"
         android:gravity="center"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/logo_main"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/logo_monster_machine"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="0dp" />
 

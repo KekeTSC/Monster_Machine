@@ -77,7 +77,7 @@
                 android:layout_weight="0.33"
                 android:gravity="center"
                 android:text="@string/sealion"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
             <TextView
@@ -87,7 +87,7 @@
                 android:layout_weight="0.34"
                 android:gravity="center"
                 android:text="@string/choco_bunny"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
             <TextView
@@ -97,7 +97,7 @@
                 android:layout_weight="0.33"
                 android:gravity="center"
                 android:text="@string/panda_claus"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -166,7 +166,7 @@
                 android:layout_weight="0.33"
                 android:gravity="center"
                 android:text="@string/metaselash"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
             <TextView
@@ -176,7 +176,7 @@
                 android:layout_weight="0.34"
                 android:gravity="center"
                 android:text="@string/mechamancer"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
             <TextView
@@ -186,7 +186,7 @@
                 android:layout_weight="0.33"
                 android:gravity="center"
                 android:text="@string/komocat"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -255,7 +255,7 @@
                 android:layout_weight="0.33"
                 android:gravity="center"
                 android:text="@string/fenix"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
             <TextView
@@ -265,7 +265,7 @@
                 android:layout_weight="0.34"
                 android:gravity="center"
                 android:text="@string/thunder_eagle"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
             <TextView
@@ -275,7 +275,7 @@
                 android:layout_weight="0.33"
                 android:gravity="center"
                 android:text="@string/pegasus"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -333,7 +333,7 @@
                 android:layout_weight="0.34"
                 android:gravity="center"
                 android:text="@string/obsidia"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
             <Space

@@ -231,6 +231,7 @@ public class DetailActivity extends AppCompatActivity {
                 Intent intent = new Intent(DetailActivity.this,   DetailActivity.class);
                 intent.putExtra("monsterId", previousMonsterId);
                 startActivity(intent);
+                overridePendingTransition(R.anim.left_in, R.anim.right_out);
             }
         });
         // Bouton Next
@@ -241,6 +242,7 @@ public class DetailActivity extends AppCompatActivity {
                 Intent intent = new Intent(DetailActivity.this,   DetailActivity.class);
                 intent.putExtra("monsterId", nextMonsterId);
                 startActivity(intent);
+                overridePendingTransition(R.anim.right_in, R.anim.left_out);
             }
         });
 
@@ -251,6 +253,8 @@ public class DetailActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(DetailActivity.this,   MainActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.bottom_in, R.anim.top_out);
+
             }
         });
 

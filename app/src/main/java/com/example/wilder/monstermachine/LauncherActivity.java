@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 public class LauncherActivity extends AppCompatActivity {
 
-    private static int SPLASH_TIME_OUT = 2000;
+    private static int SPLASH_TIME_OUT = 1500;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,7 @@ public class LauncherActivity extends AppCompatActivity {
             public void run(){
                 Intent homeIntent = new Intent(LauncherActivity.this, MainActivity.class);
                 startActivity(homeIntent);
+                overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
                 finish();
             }
 

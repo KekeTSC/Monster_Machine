@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/navy_blue_felt"
-    android:weightSum="1"
     tools:context="com.app.toyo.slideshowwallpaper.MainActivity"
     android:orientation="vertical">
 
